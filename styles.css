@@ -1,19 +1,129 @@
-/* charity: water Brand Colors & Fonts
+/* 
+  charity: water Brand Colors & Fonts
 
-Primary Colors:
-- Yellow:     #FFC907
-- Blue:       #2E9DF7
+  Primary Colors:
+  - Yellow:     #FFC907
+  - Blue:       #2E9DF7
 
-Secondary Colors:
-- Light Blue: #8BD1CB
-- Green:      #4FCB53
-- Orange:     #FF902A
-- Red:        #F5402C
-- Dark Green: #159A48
-- Pink:       #F16061
+  Secondary Colors:
+  - Light Blue: #8BD1CB
+  - Green:      #4FCB53
+  - Orange:     #FF902A
+  - Red:        #F5402C
+  - Dark Green: #159A48
+  - Pink:       #F16061
 
-Fonts:
-- Proxima Nova
-- Avenir
-
+  Fonts:
+  - Proxima Nova
+  - Avenir
 */
+
+/* Set the main font and remove default margin/padding */
+body {
+  font-family: 'Proxima Nova', 'Avenir', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #222;
+  background-color: #f4fafd;
+}
+
+/* Style the header area */
+header {
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+/* Style the logo text */
+header h1 {
+  margin: 0;
+  font-size: 2em;
+  color: #222;
+}
+
+/* Highlight the colon in the logo */
+header h1 span {
+  color: #FFC907; /* Yellow */
+}
+
+/* Style the navigation button */
+.help-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #FF902A; /* Orange */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+/* Main hero section styles */
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #2E9DF7; /* Blue */
+  color: #fff;
+}
+
+/* Highlighted text in the headline */
+.highlight {
+  color: #FFC907; /* Yellow */
+}
+
+/* Style the paragraph */
+.hero p {
+  font-size: 1.1em;
+  color: #f0f0f0;
+  margin-bottom: 20px;
+}
+
+/* Style the form */
+form {
+  margin-bottom: 20px;
+}
+
+/* Style the email input */
+input[type="email"] {
+  padding: 10px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+  font-size: 1em;
+}
+
+/* Style the subscribe button */
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #FFC907; /* Yellow */
+  color: #222;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Style the hero image */
+.hero img {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 600px) {
+  .hero {
+    padding: 20px 5px;
+  }
+  input[type="email"] {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 4px;
+  }
+  button[type="submit"] {
+    width: 100%;
+    border-radius: 4px;
+  }
+}
